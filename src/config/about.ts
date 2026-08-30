@@ -1,7 +1,7 @@
 export const aboutConfig = {
   title: "About Me",
   headline: "IT Student | Full-Stack Developer | Networking Enthusiast",
-  description: "I am an Information Technology (IT) student at Haramaya University (College of Computing and Informatics) in Ethiopia. I am passionate about full-stack software development, database design, system authorization, and network engineering. I focus on writing clean, scalable code and solving technical problems across web technologies, practical networking, and system security.",
+  description: "I am an Information Technology (IT) student at Haramaya University (College of Computing and Informatics) in Ethiopia. I am passionate about full-stack software development, database systems, AI-driven spatial mapping, and network engineering. I combine technical expertise with a strong work ethic to deliver impactful solutions.",
   personalInfo: {
     university: "Haramaya University",
     college: "College of Computing and Informatics",
@@ -93,6 +93,12 @@ export const aboutConfig = {
       issuer: "Udacity / 1 Million & 5 Million Coders Initiative",
       description: "Verified credential covering relational database design, SQL queries, data manipulation, and dataset management.",
       pdfUrl: "/Learn the Latest Tech Skills; Advance Your Career _ Udacity database.pdf"
+    },
+    {
+      title: "Mesud Hassen Professional Certificate",
+      issuer: "Udacity / Professional Development",
+      description: "Professional achievement certificate recognizing technical expertise and professional growth in software development and technology.",
+      pdfUrl: "/Certificate-Mesud_Hassen (1).jpg"
     }
   ],
   connect: {
@@ -113,4 +119,4 @@ export const aboutConfig = {
       }
     }
   }
-}; 
+};

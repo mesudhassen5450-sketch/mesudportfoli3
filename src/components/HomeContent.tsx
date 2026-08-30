@@ -33,7 +33,7 @@ export default function HomeContent() {
           <div className="flex flex-wrap gap-3 pt-2">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-neutral-900 dark:bg-white dark:text-neutral-900 rounded-xl hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-transform duration-200 hover:scale-105 shadow-md"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-neutral-900 dark:bg-white dark:text-neutral-900 rounded-xl hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors"
             >
               <span>{homeConfig.buttons.viewProjects}</span>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -43,7 +43,7 @@ export default function HomeContent() {
 
             <Link
               href="/about"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-neutral-900 dark:text-white bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-transform duration-200 hover:scale-105 shadow-sm"
+              className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-neutral-900 dark:text-white bg-white dark:bg-neutral-900 border border-neutral-300 dark:border-neutral-700 rounded-xl hover:bg-neutral-50 dark:hover:bg-neutral-800 transition-colors"
             >
               <span>{homeConfig.buttons.contact}</span>
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -59,7 +59,7 @@ export default function HomeContent() {
             >
               <span>{homeConfig.buttons.github}</span>
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.89 1.529 2.341 1.547 2.916 1.186.09-.923.35-1.547.636-1.9-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.178.578.687.48C19.138 20.195 22 16.196 22 11.517 22 6.484 17.523 2 12 2z" clipRule="evenodd" />
               </svg>
             </a>
           </div>
@@ -68,7 +68,11 @@ export default function HomeContent() {
         <div className="w-full md:w-2/5 flex justify-center">
           <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-4 border-white dark:border-neutral-800 shadow-2xl transition-transform duration-300 hover:scale-105">
             <Image
+<<<<<<< HEAD
               src="/mesudfull2.jpg"
+=======
+              src={homeConfig.profileImage}
+>>>>>>> 2056da9677d018c7b43be45e5867f641dadb25c1
               alt="Mesud Hassen Profile"
               fill
               className="object-cover"
@@ -148,7 +152,7 @@ export default function HomeContent() {
           {projectsConfig.items.map((project, idx) => (
             <div
               key={idx}
-              className="p-6 rounded-2xl bg-white dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-800 shadow-sm flex flex-col justify-between space-y-4 hover:border-indigo-400 transition-all"
+              className="p-6 rounded-2xl bg-white dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-800 shadow-sm flex flex-col justify-between space-y-4 hover:border-indigo-400 transition-colors"
             >
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
@@ -164,7 +168,7 @@ export default function HomeContent() {
                       title="GitHub Repository"
                     >
                       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.89 1.529 2.341 1.547 2.916 1.186.09-.923.35-1.547.636-1.9-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.178.578.687.48C19.138 20.195 22 16.196 22 11.517 22 6.484 17.523 2 12 2z" clipRule="evenodd" />
                       </svg>
                     </a>
                   )}
@@ -247,7 +251,7 @@ export default function HomeContent() {
         <div className="grid grid-cols-1 gap-6">
           <Link
             href="/posts/from-proposal-to-deployment"
-            className="p-6 rounded-2xl bg-white dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-3 group"
+            className="p-6 rounded-2xl bg-white dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-800 shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-2"
           >
             <div className="space-y-2">
               <span className="text-xs font-semibold text-indigo-600 dark:text-indigo-400">August 17, 2026 · Mesud Hassen</span>
@@ -255,7 +259,7 @@ export default function HomeContent() {
                 🚀 From Proposal to Deployment — My Web Development Journey
               </h3>
               <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                I’m happy to share a milestone in my software development journey: from project proposal to UI/UX design, full-stack development, database architecture, security authorization, testing, domain setup, and live web deployment.
+                I'm happy to share a milestone in my software development journey: from project proposal to UI/UX design, full-stack development, database architecture, security authorization, testing, and deployment.
               </p>
             </div>
             <div className="flex flex-wrap gap-1.5 pt-2">
@@ -338,4 +342,4 @@ export default function HomeContent() {
       </section>
     </div>
   );
-} 
+}

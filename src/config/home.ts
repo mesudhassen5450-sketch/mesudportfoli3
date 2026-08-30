@@ -6,7 +6,7 @@ export const homeConfig = {
   motto: '"{patience, faith, and focus} — Be patient with beautiful patience"',
   description: "I build intelligent web applications, AI-driven spatial GIS mapping platforms, and NLP topic modeling tools with clean architecture and modern technology.",
   overview: "Passionate Software Engineer with hands-on experience designing full-stack web applications, AI spatial GIS mapping tools, and NLP topic modeling frameworks. Proven track record in TypeScript, Python, React, and spatial database management. Driven by continuous learning and creating elegant solutions to real-world problems.",
-  profileImage: "/selfimage.png",
+  profileImage: "/mesuimage.jpg",
   buttons: {
     viewProjects: "View Projects",
     contact: "Get in Touch",

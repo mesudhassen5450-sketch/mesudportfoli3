@@ -2,6 +2,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from "next/font/google";
 import ThemeProvider from '@/components/ThemeProvider'
+import { AudioProvider } from '@/context/AudioContext'
+import { LanguageProvider } from '@/context/LanguageContext'
+import AudioPlayer from '@/components/AudioPlayer'
 import { siteConfig } from '@/config/content'
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,11 +23,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider>
-          <div className="relative h-screen">
-            <div className="relative z-10 flex flex-col h-full">
-              {children}
-            </div>
-          </div>
+          <LanguageProvider>
+            <AudioProvider>
+              <div className="relative h-screen">
+                <div className="relative z-10 flex flex-col h-full">
+                  {children}
+                </div>
+              </div>
+              <AudioPlayer />
+            </AudioProvider>
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

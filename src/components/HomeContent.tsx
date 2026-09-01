@@ -68,11 +68,7 @@ export default function HomeContent() {
         <div className="w-full md:w-2/5 flex justify-center">
           <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-4 border-white dark:border-neutral-800 shadow-2xl transition-transform duration-300 hover:scale-105">
             <Image
-<<<<<<< HEAD
-              src="/mesudfull2.jpg"
-=======
-              src={homeConfig.profileImage}
->>>>>>> 2056da9677d018c7b43be45e5867f641dadb25c1
+              src="/mesudimage2.jpg"
               alt="Mesud Hassen Profile"
               fill
               className="object-cover"
